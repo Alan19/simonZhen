@@ -73,7 +73,6 @@ public class SimonScreenZhen extends ClickableScreen implements Runnable {
 		}
 	}
 
-	@Override
 	public void initAllObjects(List<Visible> viewObjects) {
 		addButtons(viewObjects);
 		progress = getProgress();

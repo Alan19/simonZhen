@@ -6,7 +6,7 @@ import guiPractice.components.Action;
 import guiPractice.components.Clickable;
 
 public interface ButtonInterfaceZhen extends Clickable{
-	public void setAction(Action a);
+	public void setAction(Action action);
 
 	public void highlight();
 
