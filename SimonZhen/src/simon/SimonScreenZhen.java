@@ -73,7 +73,7 @@ public class SimonScreenZhen extends ClickableScreen implements Runnable {
 		}
 	}
 
-	public void initAllObjects(List<Visible> viewObjects) {
+	public void initAllObjects(ArrayList<Visible> viewObjects) {
 		addButtons(viewObjects);
 		progress = getProgress();
 		label = new TextLabel(130,230,300,40,"Let's play Simon!");
