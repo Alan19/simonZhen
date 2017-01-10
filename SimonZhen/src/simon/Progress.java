@@ -1,6 +1,7 @@
 package simon;
 
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.FontMetrics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
@@ -39,11 +40,12 @@ public class Progress extends Component implements ProgressInterfaceZhen{
 	public void update(Graphics2D g) {
 		g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 		FontMetrics fm = g.getFontMetrics();
+		g.setFont(new Font("COMIC SANS MS", Font.PLAIN, 12));
 		if(gameOver){
-			g.setColor(new Color(255,55,90));
+			g.setColor(new Color(20,55,90));
 			g.fillRect(0, 0, WIDTH, HEIGHT);
 			g.setColor(Color.white);
-			String go = "GAME OVER!";
+			String go = "Game Over!";
 			g.drawString(go, (WIDTH - fm.stringWidth(go))/2, 20);
 			g.drawString(sequenceLength, (WIDTH - fm.stringWidth(sequenceLength))/2, 40);
 
