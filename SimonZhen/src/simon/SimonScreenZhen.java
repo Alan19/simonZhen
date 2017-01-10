@@ -57,9 +57,9 @@ public class SimonScreenZhen extends ClickableScreen implements Runnable {
 
 	private void playSequence() {
 		ButtonInterfaceZhen b = null;
-		for (MoveInterfaceZhen m : moveList) {
+		for (int i = 0; i < moveList.size(); i++) {
 			if(b != null) b.dim();
-			b = m.getButton();
+			b = moveList.get(i).getButton();
 			b.highlight();
 			try {
 				Thread.sleep((long)(2000*(2.0/(roundNumber+2))));
