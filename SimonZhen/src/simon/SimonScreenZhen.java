@@ -1,12 +1,10 @@
 package simon;
 
 import java.awt.Color;
-import java.awt.event.MouseListener;
 import java.util.ArrayList;
 import java.util.List;
 
 import guiPractice.components.Action;
-import guiPractice.components.Button;
 import guiPractice.components.ClickableScreen;
 import guiPractice.components.TextLabel;
 import guiPractice.components.Visible;
@@ -155,8 +153,7 @@ public class SimonScreenZhen extends ClickableScreen implements Runnable {
 	}
 
 	private ButtonInterfaceZhen getAButton() {
-		// TODO Auto-generated method stub
-		return null;
+		return new Button();
 	}
 
 

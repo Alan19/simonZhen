@@ -14,11 +14,11 @@ public class Button extends Component implements ButtonInterfaceZhen{
 	private Color color;
 	private Action action;
 	private final Color DIM = new Color(105, 105, 105);
-	private int x;
-	private int y;
+	private static final int WIDTH = 50;
+	private static final int HEIGHT = 50;
 
-	public Button(int x, int y, int w, int h) {
-		super(x, y, w, h);
+	public Button() {
+		super(0, 0, WIDTH, HEIGHT);
 	}
 	
 	public void highlight() {
@@ -31,16 +31,9 @@ public class Button extends Component implements ButtonInterfaceZhen{
 		update();
 	}
 
-	public void setX(int i) {
-		this.x = i;
-	}
 
 	public void setColor(Color color) {
 		this.color = color;
-	}
-
-	public void setY(int i) {
-		this.y = i;
 	}
 	
 	public void update(Graphics2D g) {
