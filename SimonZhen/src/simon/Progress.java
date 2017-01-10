@@ -45,10 +45,9 @@ public class Progress extends Component implements ProgressInterfaceZhen{
 			g.setColor(new Color(20,55,90));
 			g.fillRect(0, 0, WIDTH, HEIGHT);
 			g.setColor(Color.white);
-			String go = "Game Over!";
-			g.drawString(go, (WIDTH - fm.stringWidth(go))/2, 20);
+			String gameOverMessage = "Game Over!";
+			g.drawString(gameOverMessage, (WIDTH - fm.stringWidth(gameOverMessage))/2, 20);
 			g.drawString(sequenceLength, (WIDTH - fm.stringWidth(sequenceLength))/2, 40);
-
 		}
 		else{
 			g.setColor(new Color(220,255,230));

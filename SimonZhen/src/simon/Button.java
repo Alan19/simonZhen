@@ -15,8 +15,8 @@ public class Button extends Component implements ButtonInterfaceZhen{
 	private Color color;
 	private Action action;
 	private final Color DIM = new Color(105, 105, 105);
-	private static final int WIDTH = 50;
-	private static final int HEIGHT = 50;
+	private static final int WIDTH = 75;
+	private static final int HEIGHT = 75;
 	private Color displayColor;
 	private boolean highlight;
 
