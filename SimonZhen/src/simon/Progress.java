@@ -49,13 +49,13 @@ public class Progress extends Component implements ProgressInterfaceZhen{
 			g.drawString(go, (WIDTH - fm.stringWidth(go))/2, 20);
 			g.drawString(sequenceLength, (WIDTH - fm.stringWidth(sequenceLength))/2, 40);
 
-		}else{
+		}
+		else{
 			g.setColor(new Color(220,255,230));
 			g.fillRect(0, 0, WIDTH, HEIGHT);
 			g.setColor(Color.black);
 			g.drawRect(0, 0, WIDTH-1, HEIGHT-1);
 			if(roundMessage !=null && sequenceLength != null){
-
 				g.drawString(roundMessage, (WIDTH - fm.stringWidth(roundMessage))/2, 20);
 				g.drawString(sequenceLength, (WIDTH - fm.stringWidth(sequenceLength))/2, 40);
 			}
