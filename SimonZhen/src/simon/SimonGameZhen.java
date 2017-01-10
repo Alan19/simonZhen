@@ -6,7 +6,7 @@ import guiPractice.GUIApplication;
 public class SimonGameZhen extends GUIApplication {
 	
 	public SimonGameZhen(int width, int height) {
-		super();
+		super(width, height);
 	}
 
 	@Override
