@@ -84,8 +84,8 @@ public class SimonScreenZhen extends ClickableScreen implements Runnable {
 		for (int i = 0; i < numberOfButtons; i++) {
 			buttons[i] = getAButton();
 			buttons[i].setColor(colors[i]);
-			buttons[i].setX(160 + (int)(100*Math.cos(i*2*Math.PI/(numberOfButtons))));
-			buttons[i].setY(200 - (int)(100*Math.sin(i*2*Math.PI/(numberOfButtons))));
+			buttons[i].setX(i * 100 + 20);
+			buttons[i].setY(200 - (int)(100*Math.sin(i)));
 			final ButtonInterfaceZhen b = buttons[i];
 			
 			buttons[i].setAction(new Action() {
