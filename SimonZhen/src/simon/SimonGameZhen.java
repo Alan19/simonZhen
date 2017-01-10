@@ -5,8 +5,8 @@ import guiPractice.GUIApplication;
 @SuppressWarnings("serial")
 public class SimonGameZhen extends GUIApplication {
 	
-	public SimonGameZhen() {
-		// TODO Auto-generated constructor stub
+	public SimonGameZhen(int width, int height) {
+		super();
 	}
 
 	@Override
@@ -16,7 +16,7 @@ public class SimonGameZhen extends GUIApplication {
 	}
 
 	public static void main(String[] args) {
-		SimonGameZhen game = new SimonGameZhen();
+		SimonGameZhen game = new SimonGameZhen(800, 500);
 		Thread app = new Thread(game);
 		app.start();
 	}

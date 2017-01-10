@@ -4,8 +4,8 @@ public class Move implements MoveInterfaceZhen{
 	
 	private ButtonInterfaceZhen button;
 
-	public Move() {
-		super();
+	public Move(ButtonInterfaceZhen b) {
+		this.button = b;
 	}
 
 	@Override

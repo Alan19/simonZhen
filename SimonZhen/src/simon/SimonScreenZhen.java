@@ -86,14 +86,13 @@ public class SimonScreenZhen extends ClickableScreen implements Runnable {
 	}
 
 	private MoveInterfaceZhen randomMove() {
-		ButtonInterfaceZhen b;
 		int selectedButton = 0;
 		while (true) {
 			selectedButton = (int) (Math.random()*moveList.size());
 			if(selectedButton != lastSelectedButton) break;
 		}
-		b = buttons[selectedButton];
-		return getMove(b);
+		ButtonInterfaceZhen b = buttons[selectedButton];
+		return new Move(b);
 	}
 
 	private MoveInterfaceZhen getMove(ButtonInterfaceZhen b) {
